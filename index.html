@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html class="site-document" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Kevin Ernesto Barboza Cargua, estudiante de Ingeniería de Software.">
+    <meta name="author" content="Kevin Ernesto Barboza Cargua">
+    <meta name="keywords" content="Kevin Barboza, ingeniería de software, desarrollo web, inteligencia artificial, Python, portafolio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="./">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_EC">
+    <meta property="og:title" content="Kevin Barboza | Portafolio de Ingeniería de Software">
+    <meta property="og:description" content="Conoce los proyectos, habilidades y formación de Kevin Barboza en desarrollo web, bases de datos e inteligencia artificial.">
+    <meta property="og:url" content="./">
+    <meta property="og:site_name" content="Kevin Barboza | Portafolio">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kevin Barboza | Portafolio de Ingeniería de Software">
+    <meta name="twitter:description" content="Portafolio académico de Kevin Barboza, estudiante de Ingeniería de Software.">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Kevin Ernesto Barboza Cargua",
+            "jobTitle": "Estudiante de Ingeniería de Software",
+            "description": "Estudiante de Ingeniería de Software interesado en desarrollo web, bases de datos e inteligencia artificial.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "EC"
+            },
+            "url": "./"
+        }
+    </script>
+    <title>Kevin Barboza | Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body class="site-page site-body intro-locked">
+    <div class="intro-screen" id="introScreen" aria-labelledby="introTitle">
+        <div class="intro-glow intro-glow-one"></div>
+        <div class="intro-glow intro-glow-two"></div>
+        <div class="intro-card">
+            <div class="intro-logo">KB<span>.</span></div>
+            <p class="intro-kicker body-text">PORTAFOLIO DIGITAL · 2026</p>
+            <h1 class="heading heading-1" id="introTitle">Hola, <span>Bienvenido</span>.</h1>
+            <p class="intro-text body-text">Explora mi perfil, ideas, proyectos y habilidades reunidos en un solo espacio.</p>
+            <button class="button intro-button" id="startPortfolio" type="button">
+                <span>Iniciar recorrido</span>
+                <strong><i data-lucide="arrow-right" aria-hidden="true"></i></strong>
+            </button>
+            <div class="intro-hints">
+                <span><i data-lucide="layout-dashboard" aria-hidden="true"></i> Portafolio</span>
+                <span><i data-lucide="circle-check" aria-hidden="true"></i> Disponible para explorar</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header" id="inicio">
+        <nav class="navbar container" aria-label="Navegación principal">
+            <div class="brand-menu">
+                    <button class="button brand" id="brandButton" type="button" aria-expanded="false" aria-controls="brandDropdown">
+                    KB<span>.</span>
+                </button>
+                <div class="brand-dropdown" id="brandDropdown">
+                    <button class="button" type="button" id="exitPortfolio"><i data-lucide="log-out" aria-hidden="true"></i> Salir del portafolio</button>
+                </div>
+            </div>
+
+            <button class="button nav-toggle" id="navToggle" type="button"
+                    aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                    <span></span><span></span><span></span>
+            </button>
+
+            <ul class="list-reset nav-menu" id="navMenu">
+                <li><a class="link" href="#inicio">Inicio</a></li>
+                <li><a class="link" href="#sobre-mi">Sobre mí</a></li>
+                <li><a class="link" href="#habilidades">Skills</a></li>
+                <li><a class="link" href="#proyectos">Proyectos</a></li>
+                <li><a class="link" href="#design-system">Design System</a></li>
+                <li><a class="link" href="#contacto">Contacto</a></li>
+            </ul>
+
+            <button class="button theme-toggle" id="themeToggle" type="button"
+                    aria-label="Cambiar tema" title="Cambiar tema"><i data-lucide="moon" aria-hidden="true"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow body-text">Estudiante de Ingeniería de Software</p>
+                    <h1 class="heading heading-1" id="hero-title">Hola, soy <span>Kevin Barboza</span></h1>
+                    <p class="hero-description body-text">
+                        Desarrollo soluciones tecnológicas combinando programación, bases de datos,
+                        inteligencia artificial y desarrollo web.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+                        <a class="btn btn-secondary" href="#contacto">Contáctame</a>
+                    </div>
+                    <div class="hero-highlights" aria-label="Áreas de interés">
+                        <span><i data-lucide="code-2" aria-hidden="true"></i> Desarrollo web</span>
+                        <span><i data-lucide="brain-circuit" aria-hidden="true"></i> Inteligencia artificial</span>
+                        <span><i data-lucide="database" aria-hidden="true"></i> Bases de datos</span>
+                    </div>
+                </div>
+
+                <figure class="hero-profile">
+                    <div class="profile-avatar" aria-hidden="true">KB</div>
+                    <figcaption>Ingeniería de Software · Ecuador</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="sobre-mi" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow body-text">Sobre mí</p>
+                    <h2 class="heading heading-2" id="about-title">Formación e intereses</h2>
+                    <p class="body-text">
+                        Me interesa crear aplicaciones útiles, claras y fáciles de utilizar,
+                        aplicando buenas prácticas de desarrollo y tecnologías actuales.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <article class="info-card">
+                        <div class="card-icon"><i data-lucide="graduation-cap" aria-hidden="true"></i></div>
+                        <h3 class="heading heading-3">Formación</h3>
+                        <p class="body-text">
+                            Estudiante de Ingeniería de Software, con experiencia académica
+                            en desarrollo web, bases de datos, inteligencia artificial y
+                            desarrollo de sistemas.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-icon"><i data-lucide="rocket" aria-hidden="true"></i></div>
+                        <h3 class="heading heading-3">Intereses</h3>
+                        <p class="body-text">
+                            Desarrollo de aplicaciones web, machine learning, visión por computadora,
+                            automatización y diseño de soluciones tecnológicas.
+                        </p>
+                    </article>
+
+                    <aside class="info-card">
+                        <div class="card-icon"><i data-lucide="target" aria-hidden="true"></i></div>
+                        <h3 class="heading heading-3">Objetivo</h3>
+                        <p class="body-text">
+                            Seguir fortaleciendo mis conocimientos y participar en proyectos
+                            donde pueda convertir necesidades reales en soluciones de software.
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="habilidades" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow body-text">Skills</p>
+                    <h2 class="heading heading-2" id="skills-title">Tecnologías y herramientas</h2>
+                    <p class="body-text">
+                        Tecnologías que he utilizado o estoy aprendiendo durante mi formación.
+                    </p>
+                </div>
+
+                <div class="skills-layout">
+                    <article class="skill-group">
+                        <h3 class="heading heading-3">Frontend</h3>
+                        <div class="skill-list">
+                            <span class="skill-badge"><i data-lucide="globe-2" aria-hidden="true"></i> HTML5</span>
+                            <span class="skill-badge"><i data-lucide="palette" aria-hidden="true"></i> CSS3</span>
+                            <span class="skill-badge"><i data-lucide="zap" aria-hidden="true"></i> JavaScript</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-group">
+                        <h3 class="heading heading-3">Backend</h3>
+                        <div class="skill-list">
+                            <span class="skill-badge"><i data-lucide="file-code-2" aria-hidden="true"></i> Python</span>
+                            <span class="skill-badge"><i data-lucide="leaf" aria-hidden="true"></i> Django</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-group">
+                        <h3 class="heading heading-3">Bases de datos</h3>
+                        <div class="skill-list">
+                            <span class="skill-badge"><i data-lucide="server" aria-hidden="true"></i> SQL Server</span>
+                            <span class="skill-badge"><i data-lucide="database" aria-hidden="true"></i> PostgreSQL</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-group">
+                        <h3 class="heading heading-3">IA y herramientas</h3>
+                        <div class="skill-list">
+                            <span class="skill-badge"><i data-lucide="brain-circuit" aria-hidden="true"></i> TensorFlow</span>
+                            <span class="skill-badge"><i data-lucide="chart-column" aria-hidden="true"></i> Keras</span>
+                            <span class="skill-badge"><i data-lucide="wrench" aria-hidden="true"></i> Git</span>
+                            <span class="skill-badge"><i data-lucide="github" aria-hidden="true"></i> GitHub</span>
+                            <span class="skill-badge"><i data-lucide="plug" aria-hidden="true"></i> Arduino</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="proyectos" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-heading section-heading-row">
+                    <div>
+                        <p class="eyebrow body-text">Proyectos destacados</p>
+                        <h2 class="heading heading-2" id="projects-title">Trabajo académico y tecnológico</h2>
+                        <p class="body-text">Selecciona una tecnología para filtrar los proyectos.</p>
+                    </div>
+
+                    <div class="project-filters" aria-label="Filtro de proyectos">
+                        <button class="button filter-btn active" type="button" data-filter="all">Todos</button>
+                        <button class="button filter-btn" type="button" data-filter="ia">IA</button>
+                        <button class="button filter-btn" type="button" data-filter="web">Web</button>
+                        <button class="button filter-btn" type="button" data-filter="arduino">Arduino</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <article class="project-card" data-category="ia" data-project="evaluacion">
+                        <figure class="project-image project-image-ai">
+                            <span class="project-icon"><i data-lucide="brain-circuit" aria-hidden="true"></i></span>
+                            <figcaption>IA + visión por computadora</figcaption>
+                        </figure>
+                        <div class="project-body">
+                            <div class="project-meta"><span class="tag">IA</span><span>Académico</span></div>
+                            <h3 class="heading heading-3">Sistema Automatizado de Evaluación Física</h3>
+                            <p class="body-text">
+                                Sistema orientado a automatizar una evaluación física y generar
+                                recomendaciones personalizadas mediante tecnologías de IA.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span><span>IA</span><span>Visión</span>
+                            </div>
+                            <button class="button text-btn project-detail" type="button"
+                                    data-project-id="evaluacion">Ver detalles <i data-lucide="arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ia" data-project="banano">
+                        <figure class="project-image project-image-banana">
+                            <span class="project-icon"><i data-lucide="scan-search" aria-hidden="true"></i></span>
+                            <figcaption>Clasificación de imágenes</figcaption>
+                        </figure>
+                        <div class="project-body">
+                            <div class="project-meta"><span class="tag">IA</span><span>Machine Learning</span></div>
+                            <h3 class="heading heading-3">Clasificación de Madurez de Banano</h3>
+                            <p class="body-text">
+                                Proyecto de clasificación de imágenes utilizando modelos de
+                                aprendizaje por transferencia para identificar estados de madurez.
+                            </p>
+                            <div class="project-tech">
+                                <span>TensorFlow</span><span>Keras</span><span>VGG16</span>
+                            </div>
+                            <button class="button text-btn project-detail" type="button"
+                                    data-project-id="banano">Ver detalles <i data-lucide="arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="arduino" data-project="timbre">
+                        <figure class="project-image project-image-arduino">
+                            <span class="project-icon"><i data-lucide="bell-ring" aria-hidden="true"></i></span>
+                            <figcaption>Arduino + accesibilidad</figcaption>
+                        </figure>
+                        <div class="project-body">
+                            <div class="project-meta"><span class="tag">Arduino</span><span>Electrónica</span></div>
+                            <h3 class="heading heading-3">Timbre Inclusivo Escolar</h3>
+                            <p class="body-text">
+                                Prototipo de aviso escolar con señales visuales, sonoras y de
+                                vibración para mejorar la accesibilidad.
+                            </p>
+                            <div class="project-tech">
+                                <span>Arduino</span><span>LCD</span><span>RTC</span>
+                            </div>
+                            <button class="button text-btn project-detail" type="button"
+                                    data-project-id="timbre">Ver detalles <i data-lucide="arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web" data-project="rutas">
+                        <figure class="project-image project-image-web">
+                            <span class="project-icon"><i data-lucide="map" aria-hidden="true"></i></span>
+                            <figcaption>Aplicación web</figcaption>
+                        </figure>
+                        <div class="project-body">
+                            <div class="project-meta"><span class="tag">Web</span><span>Software</span></div>
+                            <h3 class="heading heading-3">Sistema de Gestión de Rutas</h3>
+                            <p class="body-text">
+                                Aplicación orientada a gestionar, compartir y organizar rutas,
+                                incorporando funcionalidades de colaboración y moderación.
+                            </p>
+                            <div class="project-tech">
+                                <span>JavaScript</span><span>API</span><span>Base de datos</span>
+                            </div>
+                            <button class="button text-btn project-detail" type="button"
+                                    data-project-id="rutas">Ver detalles <i data-lucide="arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="empty-state body-text" id="emptyProjects" hidden>
+                    No hay proyectos para el filtro seleccionado.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="design-system" aria-labelledby="design-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow body-text">Design System / Componentes</p>
+                    <h2 class="heading heading-2" id="design-title">Sistema visual reutilizable</h2>
+                    <p class="body-text">
+                        Los elementos mostrados aquí corresponden a componentes utilizados
+                        realmente en el portafolio.
+                    </p>
+                </div>
+
+                <div class="design-grid">
+                    <article class="design-card">
+                        <h3 class="heading heading-3">Colores</h3>
+                        <div class="color-grid">
+                            <div class="color-swatch color-primary"><span>Primary</span><strong>#FF5C35</strong></div>
+                            <div class="color-swatch color-secondary"><span>Secondary</span><strong>#B7FF3C</strong></div>
+                            <div class="color-swatch color-surface"><span>Surface</span><strong>#FFFFFF</strong></div>
+                            <div class="color-swatch color-background"><span>Background</span><strong>#F4F1E8</strong></div>
+                            <div class="color-swatch color-text"><span>Text</span><strong>#171717</strong></div>
+                            <div class="color-swatch color-border"><span>Border</span><strong>#171717</strong></div>
+                        </div>
+                    </article>
+
+                    <article class="design-card">
+                        <h3 class="heading heading-3">Tipografía</h3>
+                        <div class="type-sample">
+                            <h1 class="heading heading-1">Heading 1</h1>
+                            <h2 class="heading heading-2">Heading 2</h2>
+                            <h3 class="heading heading-3">Heading 3</h3>
+                            <p class="body-text">Párrafo principal para contenido informativo.</p>
+                            <p class="muted-text body-text">Texto secundario para información complementaria.</p>
+                            <code class="font-token">--font-primary: Inter, ui-sans-serif, system-ui</code>
+                            <a class="link" href="#contacto">Enlace de ejemplo</a>
+                        </div>
+                    </article>
+
+                    <article class="design-card">
+                        <h3 class="heading heading-3">Espaciado</h3>
+                        <div class="spacing-list">
+                            <div><span class="space-box space-xs"></span><code>--space-xs: 0.25rem</code></div>
+                            <div><span class="space-box space-sm"></span><code>--space-sm: 0.5rem</code></div>
+                            <div><span class="space-box space-md"></span><code>--space-md: 1rem</code></div>
+                            <div><span class="space-box space-lg"></span><code>--space-lg: 2rem</code></div>
+                            <div><span class="space-box space-xl"></span><code>--space-xl: 4rem</code></div>
+                        </div>
+                    </article>
+
+                    <article class="design-card">
+                        <h3 class="heading heading-3">Componentes</h3>
+                        <div class="component-showcase">
+                            <button class="button btn btn-primary" type="button">Botón primario</button>
+                            <button class="button btn btn-secondary" type="button">Botón secundario</button>
+                            <span class="skill-badge"><i data-lucide="badge-check" aria-hidden="true"></i> Skill / Badge</span>
+                            <div class="mini-card">
+                                <strong>Card</strong>
+                                <span>Componente reutilizable</span>
+                            </div>
+                            <label class="showcase-label" for="demoInput">Input</label>
+                            <input class="form-control" id="demoInput" type="text" placeholder="Escribe algo...">
+                        </div>
+                    </article>
+
+                    <article class="design-card">
+                        <h3 class="heading heading-3">Forma y movimiento</h3>
+                        <div class="token-list">
+                            <div class="token-row">
+                                <span class="token-preview token-radius"></span>
+                                <code>--radius-md: 1rem</code>
+                            </div>
+                            <div class="token-row">
+                                <span class="token-preview token-shadow"></span>
+                                <code>--shadow-card: 7px 7px 0</code>
+                            </div>
+                            <div class="token-row">
+                                <span class="token-preview token-transition"><i data-lucide="move-3d" aria-hidden="true"></i></span>
+                                <code>--transition: 180ms ease</code>
+                            </div>
+                            <div class="token-row">
+                                <span class="token-preview token-success"><i data-lucide="check" aria-hidden="true"></i></span>
+                                <code>--color-success: #15803D</code>
+                            </div>
+                            <div class="token-row">
+                                <span class="token-preview token-danger"><i data-lucide="alert-circle" aria-hidden="true"></i></span>
+                                <code>--color-danger: #DC2626</code>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="contacto" aria-labelledby="contact-title">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <p class="eyebrow body-text">Contacto</p>
+                    <h2 class="heading heading-2" id="contact-title">Hablemos sobre un proyecto</h2>
+                    <p class="body-text">
+                        Puedes utilizar este formulario para realizar una consulta profesional
+                        o académica. Los campos se validan mediante JavaScript antes del envío.
+                    </p>
+
+                    <address class="contact-details">
+                        <p class="body-text"><strong><i data-lucide="mail" aria-hidden="true"></i> Correo:</strong> <a class="link" href="mailto:tu-correo@example.com">tu-correo@example.com</a></p>
+                        <p class="body-text"><strong><i data-lucide="map-pin" aria-hidden="true"></i> Ubicación:</strong> Ecuador</p>
+                        <p class="body-text"><strong><i data-lucide="briefcase-business" aria-hidden="true"></i> Perfil:</strong> Ingeniería de Software</p>
+                    </address>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input class="form-control" id="name" name="name" type="text"
+                               autocomplete="name" placeholder="Tu nombre">
+                        <small class="form-error" id="nameError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input class="form-control" id="email" name="email" type="email"
+                               autocomplete="email" placeholder="correo@ejemplo.com">
+                        <small class="form-error" id="emailError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input class="form-control" id="subject" name="subject" type="text"
+                               placeholder="Motivo del mensaje">
+                        <small class="form-error" id="subjectError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control form-control-textarea" id="message" name="message" rows="5"
+                                  placeholder="Escribe tu mensaje"></textarea>
+                        <small class="form-error" id="messageError"></small>
+                    </div>
+
+                    <button class="button btn btn-primary btn-full" type="submit">Enviar mensaje</button>
+                    <p class="form-success body-text" id="formSuccess" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p class="body-text">© <span id="currentYear"></span> Kevin Barboza. Portafolio académico.</p>
+            <a class="link" href="#inicio">Volver al inicio <i data-lucide="arrow-up" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+
+        <button class="button back-to-top" id="backToTop" type="button"
+            aria-label="Volver al inicio" title="Volver al inicio"><i data-lucide="arrow-up" aria-hidden="true"></i></button>
+
+    <div class="modal" id="projectModal" aria-hidden="true" role="dialog"
+         aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="modal-content">
+                <button class="button modal-close" id="modalClose" type="button"
+                    aria-label="Cerrar ventana"><i data-lucide="x" aria-hidden="true"></i></button>
+            <p class="eyebrow body-text" id="modalCategory">Proyecto</p>
+            <h2 class="heading heading-2" id="modalTitle">Título del proyecto</h2>
+            <p class="body-text" id="modalDescription"></p>
+            <div class="modal-section">
+                <h3 class="heading heading-3">Problema o necesidad</h3>
+                <p class="body-text" id="modalProblem"></p>
+            </div>
+            <div class="modal-section">
+                <h3 class="heading heading-3">Tecnologías</h3>
+                <div class="project-tech" id="modalTech"></div>
+            </div>
+            <div class="modal-actions">
+                <a class="btn btn-primary" id="modalRepo" href="#" target="_blank" rel="noopener">Repositorio</a>
+                <a class="btn btn-secondary" id="modalDemo" href="#" target="_blank" rel="noopener">Proyecto desplegado</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
