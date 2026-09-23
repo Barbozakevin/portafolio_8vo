@@ -186,39 +186,40 @@ function initProjectFilters() {
 
 const projectsData = {
     evaluacion: {
-        category: "Inteligencia artificial",
-        title: "Sistema Automatizado de Evaluación Física",
+        category: "Aplicación web de productividad / gestor de tareas (To-Do List)",
+        title: "Control de Tareas",
         description:
-            "Sistema académico orientado a automatizar una evaluación física y apoyar la generación de recomendaciones personalizadas.",
+            "Es una aplicación web sencilla para registrar actividades diarias, organizarlas visualmente y llevar un control del estado de cada tarea.",
         problem:
-            "Busca reducir el trabajo manual de una evaluación y centralizar la información para facilitar el seguimiento del usuario.",
+            "Muchas personas tienen dificultades para organizar sus pendientes diarios, trabajos escolares o actividades personales.",
         tech: [
-            "Python",
-            "IA",
-            "Visión por computadora",
-            "Bases de datos"
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Ionicons",
+            "Diseño web responsive"
         ],
-        repo: "https://github.com/Barbozakevin/juego-del-21.git",
-        demo: "https://barbozakevin.github.io/juego-del-21/"
+        repo: "https://github.com/Barbozakevin/Proyecto_tecnica_b2.git",
+        demo: "https://barbozakevin.github.io/Proyecto_tecnica_b2/"
     },
 
-    banano: {
-        category: "Machine Learning",
-        title: "Clasificación de Madurez de Banano",
+    agricola: {
+        category: "Producción y Ventas",
+        title: "Mercado de productos agropecuarios",
         description:
-            "Modelo de clasificación de imágenes desarrollado para reconocer diferentes estados de madurez del banano.",
+            "El mercado de productos agropecuarios es el espacio (físico o digital) donde se comercializan bienes provenientes de la agricultura",
         problem:
-            "La identificación visual manual puede variar entre personas. El proyecto explora el uso de modelos de aprendizaje por transferencia para automatizar la clasificación.",
+            "Intermediación excesiva e ineficiencia en la cadena de frío.",
         tech: [
-            "TensorFlow",
-            "Keras",
-            "VGG16",
-            "ResNet50",
-            "MobileNetV2",
-            "InceptionV3"
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Bootstrap 5",
+            "Carrito de compras",
+            "PayPal en modo simulación"
         ],
-        repo: "https://github.com/",
-        demo: "https://github.com/"
+        repo: "https://github.com/Barbozakevin/AGRONOMIA_mercado_pesquero.git",
+        demo: "https://barbozakevin.github.io/AGRONOMIA_mercado_pesquero/"
     },
 
     timbre: {
