@@ -88,7 +88,7 @@
     </header>
 
     <main>
-        <section class="hero section" aria-labelledby="hero-title">
+        <section class="hero section is-active" aria-labelledby="hero-title">
             <div class="container hero-grid">
                 <div class="hero-content">
                     <p class="eyebrow body-text">Estudiante de Ingeniería de Software</p>
@@ -97,10 +97,6 @@
                         Desarrollo soluciones tecnológicas combinando programación, bases de datos,
                         inteligencia artificial y desarrollo web.
                     </p>
-                    <div class="hero-actions">
-                        <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
-                        <a class="btn btn-secondary" href="#contacto">Contáctame</a>
-                    </div>
                     <div class="hero-highlights" aria-label="Áreas de interés">
                         <span><i data-lucide="code-2" aria-hidden="true"></i> Desarrollo web</span>
                         <span><i data-lucide="brain-circuit" aria-hidden="true"></i> Inteligencia artificial</span>
@@ -109,8 +105,10 @@
                 </div>
 
                 <figure class="hero-profile">
-                    <div class="profile-avatar" aria-hidden="true">KB</div>
-                    <figcaption>Ingeniería de Software · Ecuador</figcaption>
+                    <div class="profile-avatar" role="img" aria-label="Foto de perfil de Kevin Barboza">
+                        <img src="imagenes/image.png" alt="Foto de perfil de Kevin Barboza"
+                             onerror="this.hidden = true;">
+                    </div>
                 </figure>
             </div>
         </section>
@@ -461,12 +459,8 @@
     <footer class="site-footer">
         <div class="container footer-content">
             <p class="body-text">© <span id="currentYear"></span> Kevin Barboza. Portafolio académico.</p>
-            <a class="link" href="#inicio">Volver al inicio <i data-lucide="arrow-up" aria-hidden="true"></i></a>
         </div>
     </footer>
-
-        <button class="button back-to-top" id="backToTop" type="button"
-            aria-label="Volver al inicio" title="Volver al inicio"><i data-lucide="arrow-up" aria-hidden="true"></i></button>
 
     <div class="modal" id="projectModal" aria-hidden="true" role="dialog"
          aria-modal="true" aria-labelledby="modalTitle">
