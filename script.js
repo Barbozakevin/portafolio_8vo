@@ -222,23 +222,23 @@ const projectsData = {
         demo: "https://barbozakevin.github.io/AGRONOMIA_mercado_pesquero/"
     },
 
-    timbre: {
-        category: "Arduino y accesibilidad",
-        title: "Timbre Inclusivo Escolar",
+    juego: {
+        category: "Entrentenimiento / Juego",
+        title: "Juego de Memoria",
         description:
-            "Prototipo de aviso escolar que combina señales visuales, sonoras y de vibración.",
+            "Este proyecto consiste en un juego interactivo de memorama basado en cartas de póker, donde el jugador debe encontrar parejas de símbolos iguales dentro de un tiempo determinado.",
         problem:
-            "Busca ofrecer diferentes formas de identificar un aviso escolar, considerando necesidades de accesibilidad auditiva y visual.",
+            "En muchos juegos de memoria tradicionales, la experiencia suele ser poco dinámica o no ofrece variedad en la forma de jugar.",
         tech: [
-            "Arduino",
-            "LCD",
-            "RTC DS3231",
-            "LEDs",
-            "Buzzer",
-            "Motor vibrador"
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Lógica de juego",
+            "Diseño responsivo",
+            "Temporizador de juego",
         ],
-        repo: "https://github.com/",
-        demo: "https://github.com/"
+        repo: "https://github.com/Barbozakevin/proyecto2_juego_de_memoria.git",
+        demo: "https://barbozakevin.github.io/proyecto2_juego_de_memoria/"
     },
 
     rutas: {
