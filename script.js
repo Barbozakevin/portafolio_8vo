@@ -29,6 +29,24 @@ function initIntro() {
     if (!introScreen || !startButton) return;
 
     startButton.addEventListener("click", () => {
+        const homeSection = document.querySelector("main .hero");
+        const sections = document.querySelectorAll("main section");
+        const navLinks = document.querySelectorAll(
+            '.nav-menu a[href^="#"]'
+        );
+
+        sections.forEach((section) => {
+            section.classList.toggle("is-active", section === homeSection);
+        });
+
+        navLinks.forEach((link) => {
+            link.classList.toggle(
+                "active",
+                link.getAttribute("href") === "#inicio"
+            );
+        });
+
+        window.history.replaceState(null, "", "#inicio");
         introScreen.classList.add("hide-intro");
         document.body.classList.remove("intro-locked");
         window.scrollTo({ top: 0, behavior: "auto" });
