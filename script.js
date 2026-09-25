@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initProjectModal();
     initContactForm();
     initBackToTop();
-    initActiveNavigation();
-    initSmoothNavigation();
+    initSectionNavigation();
     initIcons();
 
     const currentYear = document.getElementById("currentYear");
@@ -461,31 +460,59 @@ function initActiveNavigation() {
     sections.forEach((section) => observer.observe(section));
 }
 
-function initSmoothNavigation() {
+function initSectionNavigation() {
+    const main = document.querySelector("main");
+    const sections = document.querySelectorAll("main section");
+    const navLinks = document.querySelectorAll(
+        '.nav-menu a[href^="#"]'
+    );
+
+    if (!main || !sections.length) return;
+
+    main.classList.add("section-view");
+
+    const setActiveSection = (section) => {
+        sections.forEach((item) => {
+            item.classList.toggle("is-active", item === section);
+        });
+
+        navLinks.forEach((link) => {
+            const linkTarget = link.getAttribute("href");
+            const isActive = section.id === "hero"
+                ? linkTarget === "#inicio"
+                : linkTarget === `#${section.id}`;
+
+            link.classList.toggle("active", isActive);
+        });
+
+        window.scrollTo({ top: 0, behavior: "auto" });
+    };
+
+    const getSectionFromHash = () => {
+        if (window.location.hash === "#inicio" || !window.location.hash) {
+            return document.querySelector(".hero");
+        }
+
+        return document.querySelector(window.location.hash) || document.querySelector(".hero");
+    };
+
+    setActiveSection(getSectionFromHash());
+
     document.querySelectorAll('a[href^="#"]').forEach((link) => {
         link.addEventListener("click", (event) => {
             const targetId = link.getAttribute("href");
 
             if (!targetId || targetId === "#") return;
 
-            const target = document.querySelector(targetId);
+            const target = targetId === "#inicio"
+                ? document.querySelector(".hero")
+                : document.querySelector(targetId);
 
             if (!target) return;
 
             event.preventDefault();
-
-            if (targetId === "#inicio") {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "auto"
-                });
-                return;
-            }
-
-            target.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
+            setActiveSection(target);
+            window.history.replaceState(null, "", targetId);
         });
     });
 }
