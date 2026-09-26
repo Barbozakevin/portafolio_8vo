@@ -258,22 +258,27 @@ const projectsData = {
         demo: "https://barbozakevin.github.io/proyecto2_juego_de_memoria/"
     },
 
-    rutas: {
-        category: "Desarrollo web",
-        title: "Sistema de Gestión de Rutas",
+    facturacion: {
+        category: "Gestión / Administración",
+        title: "CRUD de Facturación",
         description:
-            "Aplicación web académica para gestionar, compartir y organizar rutas con funcionalidades de colaboración y moderación.",
+            "Este proyecto permite gestionar clientes, productos y ventas mediante un sistema de facturación desarrollado con programación orientada a objetos. Las ventas generan facturas con el detalle de productos, subtotal, descuentos, IVA y total; los datos se almacenan en archivos JSON.",
         problem:
-            "Busca centralizar la creación y gestión de rutas, permitiendo compartir información y aplicar controles sobre comentarios y contenido.",
+            "Llevar el control de clientes, inventario y ventas de forma manual puede provocar errores en los cálculos y dificultar la consulta y actualización de la información.",
         tech: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "API",
-            "Base de datos"
+            "HTML5",
+            "CSS3",
+            "JavaScript",   
+            "Python",
+            "Programación Orientada a Objetos",
+            "Operaciones CRUD",
+            "Archivos JSON",
+            "Validación de datos",
+            "Cálculo de facturas, descuentos e IVA",
+            "Interfaz de consola",
         ],
-        repo: "https://github.com/",
-        demo: "https://github.com/"
+        repo: "https://github.com/Barbozakevin/crud_factura.git",
+        demo: "https://barbozakevin.github.io/crud_factura/"
     }
 };
 
