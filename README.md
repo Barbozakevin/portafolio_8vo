@@ -27,7 +27,6 @@ Diseñar y desarrollar una web portfolio personal que combine un buen diseño vi
 - Filtros interactivos para proyectos por categoría.
 - Modales con información detallada de cada proyecto.
 - Formulario de contacto con validación JavaScript.
-- Botón para volver al inicio.
 - Navegación suave entre secciones.
 - Diseño visual reutilizable con sistema de colores, tipografía y espaciado.
 
