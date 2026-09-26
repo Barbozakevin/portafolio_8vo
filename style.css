@@ -761,6 +761,12 @@ canvas {
     object-position: top center;
 }
 
+.project-screenshot-contain {
+    object-fit: contain;
+    object-position: center;
+    background: var(--color-surface-strong);
+}
+
 .project-image span {
     font-size: 4.5rem;
 }
