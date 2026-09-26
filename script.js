@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initProjectFilters();
     initProjectModal();
     initContactForm();
-    initBackToTop();
     initSectionNavigation();
     initIcons();
 
@@ -428,59 +427,6 @@ function initContactForm() {
 
 function isValidEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
-function initBackToTop() {
-    const backToTop = document.getElementById("backToTop");
-
-    if (!backToTop) return;
-
-    window.addEventListener("scroll", () => {
-        backToTop.classList.toggle(
-            "visible",
-            window.scrollY > 500
-        );
-    });
-
-    backToTop.addEventListener("click", () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-}
-
-function initActiveNavigation() {
-    const sections = document.querySelectorAll("main section[id]");
-    const navLinks = document.querySelectorAll(
-        '.nav-menu a[href^="#"]'
-    );
-
-    if (!sections.length || !navLinks.length) return;
-
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (!entry.isIntersecting) return;
-
-                navLinks.forEach((link) => {
-                    link.classList.remove("active");
-                });
-
-                const activeLink = document.querySelector(
-                    `.nav-menu a[href="#${entry.target.id}"]`
-                );
-
-                activeLink?.classList.add("active");
-            });
-        },
-        {
-            rootMargin: "-30% 0px -60% 0px",
-            threshold: 0
-        }
-    );
-
-    sections.forEach((section) => observer.observe(section));
 }
 
 function initSectionNavigation() {
