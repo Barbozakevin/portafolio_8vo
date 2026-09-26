@@ -171,7 +171,7 @@ function initResponsiveMenu() {
 
 function initProjectFilters() {
     const filterButtons = document.querySelectorAll(".filter-btn");
-    const projectCards = document.querySelectorAll(".project-card");
+    const projectCards = document.querySelectorAll("#projectsGrid .project-card");
     const emptyProjects = document.getElementById("emptyProjects");
 
     filterButtons.forEach((button) => {

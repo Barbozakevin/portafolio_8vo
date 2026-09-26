@@ -1,4 +1,4 @@
-# Kevin Barboza | Portafolio Personal
+# Kevin Ernesto Barboza Cargua | Portafolio Personal
 
 Portfolio personal desarrollado para presentar mi perfil profesional, experiencia académica, habilidades técnicas y proyectos destacados en el área de ingeniería de software. Este proyecto busca reflejar una identidad visual moderna, con un enfoque en diseño, usabilidad y navegación intuitiva.
 
@@ -89,7 +89,7 @@ Los archivos principales para editar el contenido y estilo del portafolio son:
 
 ## Información personal
 
-- Nombre: Kevin Barboza
+- Nombre: Kevin Ernesto Barboza Cargua
 - Perfil: Estudiante de Ingeniería de Software
 - Ubicación: Ecuador
 - Áreas de interés: desarrollo web, bases de datos, inteligencia artificial, soluciones tecnológicas
